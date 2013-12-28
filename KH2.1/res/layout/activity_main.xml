@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 头像与姓名 -->
+
+            <LinearLayout
+                android:id="@+id/layoutPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/tx"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="#00000000"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_launcher" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="70dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="@string/ht_name" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="8dp"
+                android:background="#11000000" />
+
+            <!-- 电话 -->
+
+            <LinearLayout
+                android:id="@+id/layoutPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/tv_phone"
+                        android:textSize="15sp" />
+
+                    <ImageButton
+                        android:id="@+id/ibPhoneAdd"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:background="#00000000"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/add_1" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="12dp" >
+
+                    <Button
+                        android:id="@+id/bt_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bt_phone" />
+
+                    <EditText
+                        android:id="@+id/et_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/bt_phone"
+                        android:hint="@string/ht_phone" />
+
+                    <ImageButton
+                        android:id="@+id/ibPhoneDelete"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignRight="@+id/et_number"
+                        android:layout_marginTop="8dp"
+                        android:background="#00000000"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/delete_1" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="8dp"
+                android:background="#11000000" />
+
+            <!-- 电子邮件 -->
+
+            <LinearLayout
+                android:id="@+id/layoutMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" >
+
+                    <TextView
+                        android:id="@+id/tvMail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginBottom="12dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/tv_mail"
+                        android:textSize="15sp" />
+
+                    <ImageButton
+                        android:id="@+id/ibMailAdd"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:background="#00000000"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/add_1" />
+
+                    <Button
+                        android:id="@+id/btMail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvMail"
+                        android:text="@string/mailHouse" />
+
+                    <EditText
+                        android:id="@+id/etMail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvMail"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/btMail"
+                        android:hint="@string/htMail" />
+
+                    <ImageButton
+                        android:id="@+id/ibMailDelete"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignRight="@id/etMail"
+                        android:layout_below="@id/tvMail"
+                        android:layout_marginTop="8dp"
+                        android:background="#00000000"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/delete_1" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="8dp"
+                android:background="#11000000" />
+
+            <!-- 通信地址 -->
+
+            <LinearLayout
+                android:id="@+id/layoutAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" 
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/tvAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginBottom="12dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/tvAddress"
+                        android:textSize="15sp" />
+
+                    <ImageButton
+                        android:id="@+id/ibAddressAdd"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:background="#00000000"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/add_1" />
+
+                    <Button
+                        android:id="@+id/btAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvAddress"
+                        android:layout_marginTop="40dp"
+                        android:text="@string/addressHouse" />
+
+                    <EditText
+                        android:id="@+id/etAddressStreet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvAddress"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/btAddress"
+                        android:hint="@string/htStreet" />
+
+                    <EditText
+                        android:id="@+id/etAddressCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/etAddressStreet"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/btAddress"
+                        android:hint="@string/htCity" />
+
+                    <EditText
+                        android:id="@+id/etAddressProvince"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/etAddressCity"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/btAddress"
+                        android:hint="@string/htProvince" />
+
+                    <ImageButton
+                        android:id="@+id/ibAddressDelete"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignRight="@id/etAddressStreet"
+                        android:layout_below="@id/tvAddress"
+                        android:layout_marginTop="40dp"
+                        android:background="#00000000"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/delete_1" />
+                </RelativeLayout>
+            </LinearLayout>
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="8dp"
+                android:background="#11000000" />
+            
+            <!-- 社交工具 -->
+            
+            <LinearLayout
+                android:id="@+id/layoutSns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" >
+
+                    <TextView
+                        android:id="@+id/tvSns"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginBottom="12dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/tvSns"
+                        android:textSize="15sp" />
+
+                    <ImageButton
+                        android:id="@+id/ibSnsAdd"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:background="#00000000"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/add_1" />
+
+                    <Button
+                        android:id="@+id/btSns"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvSns"
+                        android:text="@string/btSnsWeiChat" />
+
+                    <EditText
+                        android:id="@+id/etSns"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvSns"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/btSns"
+                        android:hint="@string/snsWeiChatNumber" />
+
+                    <ImageButton
+                        android:id="@+id/ibSnsDelete"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignRight="@id/etSns"
+                        android:layout_below="@id/tvSns"
+                        android:layout_marginTop="8dp"
+                        android:background="#00000000"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/delete_1" />
+                </RelativeLayout>
+            </LinearLayout>
+            
+            
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#2B2B2B"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="#BDBEBD"
+            android:text="@string/bt_ok" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="#BDBEBD"
+            android:text="@string/bt_cancel" />
+    </LinearLayout>
+
+</LinearLayout>
