@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">携程</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="plane">机票</string>
+    <string name="train">火车票</string>
+    <string name="car">用车</string>
+    <string name="hotel">酒店</string>
+    <string name="my">我的携程</string>
+    <string name="group">团购</string>
+    <string name="travel">旅游</string>
+    <string name="ticket">景点门票</string>
+    <string name="destination">攻略</string>
+
+</resources>

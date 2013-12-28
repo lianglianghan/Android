@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_dualwheel"
+        android:gravity="center"
+        android:text="攻略社区"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_destination_ite_cover" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="海外推荐"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:stretchColumns="0,1,2" >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="1dp"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:text="新加坡"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="1dp"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:text="曼谷"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="1dp"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:text="首尔"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="1dp"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:text="东京"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="1dp"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:text="济州岛"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="1dp"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:text="伦敦"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="1dp"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:text="暹粒-吴哥窟"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="1dp"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:text="纽约"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="1dp"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:text="吉隆坡"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_span="3"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:text="更多海外目的地"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="国内推荐"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:stretchColumns="0,1,2" >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="1dp"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:text="北京"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="1dp"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:text="上海"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="1dp"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:text="澳门"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="1dp"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:text="厦门"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="1dp"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:text="成都"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="1dp"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:text="杭州"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="1dp"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:text="深圳"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="1dp"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:text="西安"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="1dp"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:text="丽江"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_span="3"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:text="更多国内目的地"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

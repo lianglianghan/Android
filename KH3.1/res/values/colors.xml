@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="plane">#318EF7</color>
+    <color name="trainBrg">#7379EF</color>
+    <color name="carnBrg">#9455F7</color>
+    <color name="hotelBrg">#08C7DE</color>
+    <color name="mycolor">#ffffff</color>
+    <color name="groupBrg">#FF657B</color>
+    <color name="travelBrg">#84D318</color>
+    <color name="ticketsBrg">#F7B610</color>
+    <color name="destinationBrg">#FF864A</color>
+    <color name="mytriptext">#FF9E18</color>
+</resources>
