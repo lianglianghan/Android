@@ -1,1 +1,1 @@
-Love Android, love life!
+Love Android, Love Life!
