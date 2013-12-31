@@ -36,6 +36,7 @@ public class MyFragment extends Fragment {
 		this.pictures = pictures;
 	}
 
+	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {

@@ -1,8 +1,5 @@
 package com.liangliang.assistant;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import android.os.Bundle;
 import android.app.ActionBar;
 import android.app.ActionBar.Tab;
