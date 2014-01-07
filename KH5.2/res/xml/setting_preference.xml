@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key="wireless"
+        android:title="WIRELESS &amp; NETWORKS" >
+        <SwitchPreference
+            android:icon="@drawable/ic_settings_wifi"
+            android:key="wlan"
+            android:title="WLAN" />
+        <SwitchPreference
+            android:icon="@drawable/ic_settings_bluetooth"
+            android:key="bluetooth"
+            android:title="Bluetooth" />
+
+        <PreferenceScreen
+            android:icon="@drawable/ic_settings_data_usage"
+            android:key="data_usage"
+            android:title="Data usage" >
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:icon="@drawable/ic_tab_selected_running"
+            android:key="more"
+            android:title="More..." >
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="airplane"
+                android:title="Airplane mode" />
+
+            <Preference
+                android:key="vpn"
+                android:title="VPN" />
+            <Preference
+                android:key="hotspot"
+                android:title="Tethering &amp; portable hotspot" />
+
+            <PreferenceScreen
+                android:dependency="airplane"
+                android:key="mobile_networks"
+                android:title="Mobile networks" >
+            </PreferenceScreen>
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="device"
+        android:title="DEVICE" >
+        <PreferenceScreen
+            android:icon="@drawable/ic_settings_sound"
+            android:title="Sound" >
+            <Preference
+                android:key="volume"
+                android:title="Volume" />
+            <Preference
+                android:key="silent_mode"
+                android:summary="Vibrate"
+                android:title="Silent mode" />
+
+            <PreferenceCategory
+                android:key="ringtone_notification"
+                android:title="RIGTONE &amp; NOTIFICATIONS" >
+                <RingtonePreference
+                    android:key="phone_ringtone"
+                    android:summary="Over the horizon"
+                    android:title="Phone ringtone" />
+                <RingtonePreference
+                    android:key="default_notification"
+                    android:summary="Whistle"
+                    android:title="Default notification" />
+
+                <CheckBoxPreference
+                    android:defaultValue="true"
+                    android:key="vibrate_ring"
+                    android:title="Vibrate and ring" />
+            </PreferenceCategory>
+            <PreferenceCategory
+                android:key="system"
+                android:title="System" >
+                <CheckBoxPreference
+                    android:defaultValue="true"
+                    android:key="touch_tone"
+                    android:title="Dial pad touch tones" />
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="touch_sound"
+                    android:title="Touch sounds" />
+                <CheckBoxPreference
+                    android:defaultValue="true"
+                    android:key="screen_lock"
+                    android:title="Screen lock sound" />
+                <CheckBoxPreference
+                    android:defaultValue="true"
+                    android:key="vibrateOntouch"
+                    android:title="Vibrate on touch" />
+            </PreferenceCategory>
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:icon="@drawable/ic_settings_display"
+            android:key="display"
+            android:title="Display" >
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:icon="@drawable/ic_settings_storage"
+            android:key="storage"
+            android:title="Storage" >
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:icon="@drawable/ic_settings_battery"
+            android:key="battary"
+            android:title="Battary" >
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:icon="@drawable/ic_settings_applications"
+            android:key="app"
+            android:title="Apps" >
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="personal"
+        android:title="PERSONL" >
+        <PreferenceScreen
+            android:icon="@drawable/ic_settings_sync"
+            android:key="sync"
+            android:title="Accounts &amp; sync" >
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:icon="@drawable/ic_settings_location"
+            android:key="location"
+            android:title="Location service" >
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:icon="@drawable/ic_settings_security"
+            android:key="security"
+            android:title="Security" >
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:icon="@drawable/ic_settings_language"
+            android:key="language"
+            android:title="Language &amp; input" >
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:icon="@drawable/ic_settings_backup"
+            android:key="backup"
+            android:title="Backup &amp; reset" >
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="system"
+        android:title="System" >
+        <PreferenceScreen
+            android:icon="@drawable/ic_settings_date_time"
+            android:key="date_time"
+            android:title="Date &amp; time" >
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:icon="@drawable/ic_settings_accessibility"
+            android:key="accessibility"
+            android:title="Accessibility" >
+            <PreferenceCategory
+                android:key="services"
+                android:title="SERVICES" >
+                <Preference android:title="              No services installed" />
+            </PreferenceCategory>
+            <PreferenceCategory
+                android:key="access_system"
+                android:title="SYSTEM" >
+                <CheckBoxPreference
+                    android:key="large_text"
+                    android:title="Large text" />
+                <CheckBoxPreference
+                    android:key="power_button"
+                    android:title="Power button ends call" />
+                <CheckBoxPreference
+                    android:key="auto_rotate"
+                    android:title="Auto-rotate screen" />
+                <CheckBoxPreference
+                    android:key="speak_pswd"
+                    android:title="Speak passwords" />
+                <CheckBoxPreference
+                    android:key="touch_hold"
+                    android:summary="Short"
+                    android:title="Touch &amp; hold delay" />
+
+                <Preference
+                    android:key="install_website_scripts"
+                    android:summary="Not allowed"
+                    android:title="Install web scripts" />
+            </PreferenceCategory>
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:icon="@drawable/ic_settings_development"
+            android:key="developer_options"
+            android:title="Developer options" >
+        </PreferenceScreen>
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:icon="@drawable/ic_settings_fastboot"
+            android:key="fast_boot"
+            android:title="Fast boot" />
+
+        <PreferenceScreen
+            android:icon="@drawable/ic_settings_about"
+            android:key="about_phone"
+            android:title="About phone" >
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,33 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- 自定义的style，但此处有一个问题就是：文字的颜色都为白色，当某选项不能用的时候还是为白色 -->
+    <!-- 解决方法：暂时还没找到 -->
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="perference_set_activity">
+       
+        <item name="android:focusable">false</item>
+        <!-- 字体颜色 -->
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:colorBackgroundCacheHint">#00000000</item>
+ 		<!-- 背景缓存色透明，避免拖动全黑 -->
+        <item name="android:windowNoTitle">false</item>
+ 		<!-- 是否有标题 -->
+    </style>
+
+</resources>
