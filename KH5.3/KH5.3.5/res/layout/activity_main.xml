@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/memo_more_bg"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/header" >
+
+        <RelativeLayout
+            android:id="@+id/main_header"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/header" >
+
+            <ImageButton
+                android:id="@+id/newDiary"
+                android:layout_width="58dp"
+                android:layout_height="match_parent"
+                android:background="#00ffffff"
+                android:onClick="CreateDiary"
+                android:src="@drawable/memo_btn_create_ss" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/newDiary"
+                android:gravity="center_vertical"
+                android:text="创建备忘录"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/count_diary"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:text="(0)"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/search_rl"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffffff"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/sv_img"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/a_memo" />
+
+            <EditText
+                android:id="@+id/search_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="60dp"
+                android:layout_toRightOf="@id/sv_img"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:hint="请输入搜索的内容"
+                android:textColor="#000000"
+                android:textCursorDrawable="@null"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/search_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:onClick="searchDiary"
+                android:textColor="#af000000"
+                android:text="搜索" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/note_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" >
+    </ListView>
+
+</LinearLayout>
