@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/start_app"
+        android:title="打开应用"/>
+    <item
+        android:id="@+id/delete_app"
+        android:title="删除应用"/>
+    <item
+        android:id="@+id/show_appInfo"
+        android:title="应用信息"/>
+
+</menu>
