@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/img_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="150dp" >
+
+        <TextView
+            android:id="@+id/song_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="克罗地亚狂想曲"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/song_img"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/song_name"
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon_cover_large" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp" >
+
+        <SeekBar
+            android:id="@+id/song_progress"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@id/song_progress"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp" >
+
+            <Button
+                android:id="@+id/song_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:onClick="play"
+                android:text="播放" />
+
+            <Button
+                android:id="@+id/song_pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@id/song_play"
+                android:onClick="pause"
+                android:text="暂停" />
+
+            <Button
+                android:id="@+id/song_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/song_play"
+                android:onClick="stop"
+                android:text="停止" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
