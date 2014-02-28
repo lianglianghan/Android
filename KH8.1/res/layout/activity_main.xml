@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:my="http://schemas.android.com/apk/res/com.liangliang.diyview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <com.liangliang.diyview.MyView
+        android:id="@+id/myView1"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        my:bgColor="#ff000000"
+        my:textColor="#ffffffff"
+        my:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/et_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/myView1"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:hint="请输入11位电话号码" />
+
+    <Button
+        android:id="@+id/bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_number"
+        android:layout_alignBottom="@+id/et_number"
+        android:layout_alignParentRight="true"
+        android:onClick="Show"
+        android:text="确定" />
+
+    <com.liangliang.diyview.ClockView
+        android:id="@+id/clock_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp" />
+
+</RelativeLayout>
